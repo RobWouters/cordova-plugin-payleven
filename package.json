@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-payleven",
+  "version": "2.2.0",
+  "cordova": {
+    "id": "cordova-plugin-payleven",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "Cordova Payleven Plugin",
+  "repository": "https://github.com/RobWouters/cordova-plugin-payleven.git",
+  "issue": "https://github.com/RobWouters/cordova-plugin-payleven/issues",
+  "keywords": [
+    "payleven",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Rob Wouters",
+  "license": "Apache 2.0"
+}

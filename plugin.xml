@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="nl.rob-wouters.plugins.payleven"
+    version="0.0.2">
+    <name>Payleven</name>
+    <description>Payleven Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>payleven</keywords>
+    <repo>https://github.com/RobWouters/cordova-plugin-payleven.git</repo>
+    <issue>https://github.com/RobWouters/cordova-plugin-payleven/issues</issue>
+
+    <!-- android -->
+    <platform name="android">
+        <js-module src="www/android/payleven.js" name="payleven">
+            <runs/>
+            <clobbers target="cordova.plugins.Payleven" />
+        </js-module>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Payleven">
+              <param name="android-package" value="nl.rob_wouters.payleven.Payleven" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Payleven.java" target-dir="src/nl/rob-wouters/payleven" />
+        <source-file src="libs/payleven-android-sdk-2.0.2.jar" target-dir="libs" />
+    </platform>
+</plugin>
